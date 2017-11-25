@@ -9,15 +9,13 @@ This container holds all the software and code required for running the [Slack M
 Raspberry Pi:
 
 **Install Docker**
-    ```
-    curl -sSL https://get.docker.com | sh
-    ```
+    `curl -sSL https://get.docker.com | sh`
+    
 **Create a systemd file such that the container runs at startup**
-    ```
+    
     sudo nano /etc/systemd/system/docker-musicbot.service
-    ```
 **Paste in:**
-    ```
+ 
     [Unit]
     Description=Redis container
     Requires=docker.service
@@ -30,7 +28,7 @@ Raspberry Pi:
 
     [Install]
     WantedBy=default.target
-    ```
+    
 **Add the service to systemd:**
     ```
     sudo systemctl enable docker-musicbot.service
