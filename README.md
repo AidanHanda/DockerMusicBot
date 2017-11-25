@@ -23,7 +23,7 @@ Raspberry Pi:
 
     [Service]
     Restart=always
-    ExecStart=sudo /usr/bin/docker run -it -e SLACKAPIKEY=xoxb-229735203472-Eobv3Ou8k4mX2wiyv1NYuiP1 --device /dev/snd/ aidanhanda/music-bot
+    ExecStart=sudo /usr/bin/docker run -it -e SLACKAPIKEYHERE --device /dev/snd/ aidanhanda/music-bot
     ExecStop=/usr/bin/docker
 
     [Install]
