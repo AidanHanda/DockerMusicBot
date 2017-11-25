@@ -17,7 +17,7 @@ Raspberry Pi:
 **Paste in:**
  
     [Unit]
-    Description=Redis container
+    Description=MusicBot Container
     Requires=docker.service
     After=docker.service
 
